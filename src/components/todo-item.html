@@ -1,0 +1,8 @@
+<bindable name="todo"></bindable>
+<bindable name="index"></bindable>
+<bindable name="deleteTodo"></bindable>
+
+<div class="todo-item" completed.class="todo.completed">
+    <input type="checkbox" checked.bind="todo.completed">
+    <button type="button" click.trigger="deleteTodo()">x</button>
+</div>
