@@ -1,9 +1,10 @@
 .todo-item {
     align-items: center;
-    border-bottom: 1px solid #ededed;
+    border-bottom: 2px solid #ededed;
     display: grid;
     grid-template-columns: 50px 450px 50px;
     word-wrap: break-word;
+    font: black;
 }
 
 .todo-item input[type="checkbox"] {
@@ -12,30 +13,30 @@
     width: 25px;
 }
 
+
 .todo-item.completed {
-    color: #D9D9DD;
-    text-decoration: line-through;
+    color: #cccccc;
+    text-decoration: line-through blue;
 }
 
 .todo-item p {
     box-shadow: none;
     font-size: 18px;
     outline: none;
-    padding: 18px 0;
-}
-
-.todo-item p:focus {
-    font-weight: bold;
+    padding: 12px 0;
 }
 
 .todo-item button {
-    color: red;
-    cursor: pointer;
-    font-size: 24px;
+    color: #333333;
+    border: none;
+    font-size: 26px;
     justify-self: end;
     visibility: hidden;
+    cursor: pointer;
 }
 
 .todo-item:hover button {
     visibility: visible;
+    text-shadow: 2px 1px 15px blue;
 }
+

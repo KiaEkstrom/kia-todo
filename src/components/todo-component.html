@@ -1,13 +1,19 @@
 <import from="./todo-item.html"></import>
 
 <div class="todo">
-    <h1>Tehtävää</h1>
+    <h1>Tehtävälista</h1>
 
-    <div class="container">
-        <input type="text" value.bind="todo" keypress.trigger="newTodo($event)"  placeholder="Lisää tekemistä">
+    <button class="edit-btn" click.trigger="editList()">Muokkaa listaa</button>
+    <div class="todo-container">
+        <div class="todo-compose">
+            <input type="text" value.bind="todo" keypress.trigger="newTodo($event)"  
+            placeholder="Lisää tekemistä">
+        </div>
         <!--<button type="button" click.trigger="newTodo($event)()">Lisää</button>-->
-
-        <todo-item repeat.for="todo of todos" todo.bind="todo" index.bind="$index" delete-todo.call="deleteTodo($index)"></todo-item>
+        <div class="todo-items">
+            <todo-item repeat.for="todo of todos" todo.bind="todo" index.bind="$index" 
+            delete-todo.bind="deleteTodo"></todo-item>
+        </div>
     </div>
 </div>
 

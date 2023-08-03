@@ -1,7 +1,7 @@
 .todo-container {
     background: white;
     border-radius: 8px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+   
     display: grid;
     grid-template-rows: 60px 1fr;
     grid-column: 2;
@@ -11,24 +11,24 @@
     margin-left: -18px;
 }
 
-.todo-compose {
-    align-items: stretch;
-    box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.19);
-    border-bottom: 1px solid #e6e6e6;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 60px;
+.edit-btn {
+
 }
 
-    .todo-compose button {
-        color: #e6e6e6;
-        justify-self: stretch;
-        text-align: center;
-    }
+.todo-compose {
+    align-items: stretch;
+    /*display: none;*/
+    /*box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.19);*/
+   
+    /*display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px;*/
+}
 
     .todo-compose input {
         border: none;
-        border-bottom: 1px solid #e6e6e6;
+        /*border-bottom: 1px solid #e6e6e6;*/
+        border: 5px solid green;
         font-size: 18px;
         outline: none;
         padding: 15px;
@@ -43,6 +43,6 @@
 }
 
 ::placeholder {
-    color: #e6e6e6;
+    color: #333333;
     font-style: italic;
   }

@@ -7,7 +7,7 @@
 }
 
 .todo {
-  background: #FC9D9A;
+  background: #33d6ff;
   display: grid;
   grid-template-columns: 1fr 550px 1fr;
   grid-template-rows: 110px 9fr 1fr;
@@ -22,9 +22,17 @@
   justify-self: center;
 }
 
+
+
 button {
-  background: none;
-  border: none;
+  background: white;
+  border: 5px solid yellow;
+  border-radius: 30%;
   color: #333;
-  font-size: 28px;
+  font-size: 18px;
+  align-self: self-end;
+  padding: 12px 12px;
+  margin: 20px;
+  grid-column: 3;
+
 }
