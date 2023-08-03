@@ -3,12 +3,19 @@ export class TodoComponent {
 
     todos = [
         { completed: false, text: 'Harjoittele Aureliaa' },
-        { completed: false, text: 'Selvitä harjoitteluun liittyvät asiat' },
-        { completed: true, text: "Go to store" }
+        { completed: false, text: "Mene kauppaan" },
+        { completed: true, text: 'Selvitä harjoitteluun liittyvät asiat' }
     ];
 
     editList() {
-        return this.todo.todo-compose
+        var editbtn = document.getElementsByClassName("todo-compose");
+        editbtn[0].style.display = "block";
+
+        /*var checkbtn = document.getElementsByClassName("check");
+        checkbtn[0].style.display = "block";
+
+        var delbtn = document.getElementsByClassName("del");
+        delbtn[0].style.display = "block";*/
     }
 
 
